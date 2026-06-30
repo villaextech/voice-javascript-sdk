@@ -1,1 +1,32 @@
+# --- Version control (CRITICAL: .git can hold tokenized remote URLs) ---
+.git
+**/.git
+.gitignore
+.gitattributes
+
+# --- Secrets & credentials (never ship these) ---
+.env
+.env.*
+!.env.example
+!.env.example.ps1
+*.pem
+*.key
+secrets/
+
+# --- Agent / editor tooling ---
+.claude
+.vscode
+.idea
+
+# --- CI / docs / meta (not needed at runtime) ---
+.github
+screenshots/
+
+# --- Python build/test caches ---
 venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# --- OS noise ---
+.DS_Store
